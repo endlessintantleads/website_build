@@ -577,7 +577,7 @@ export function Home() {
             </div>
             <div className="card-premium p-8 shadow-2xl shadow-slate-200/50">
               <form action="https://formsubmit.co/contact@endlessinstantleads.com" method="POST" onSubmit={handleSubmit} className="space-y-4">
-                <input type="hidden" name="_next" value="https://endless-instant-leads-508394260723.us-west1.run.app/thank-you" />
+                <input type="hidden" name="_next" value={`${window.location.origin}${window.location.pathname}#/thank-you`} />
                 <input type="hidden" name="_captcha" value="false" />
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
